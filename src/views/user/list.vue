@@ -3,7 +3,7 @@
     <div slot="header" class="clearfix">
       <span>用户列表</span>
     </div>
-    <el-table v-if="userList.length == 0" :data="userList" border stripe>
+    <el-table v-if="userList.length != 0" :data="userList" border stripe>
       <el-table-column
         :formatter="formatCreateTime"
         align="center"

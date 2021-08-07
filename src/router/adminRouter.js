@@ -188,23 +188,23 @@ export default [
 
 
 
-  // 
-  {
-    path: '/demo',
-    meta: {
-      title: 'demo',
-      icon: 'el-icon-loading',
-    },
-    name: 'demo',
-    component: Layout,
-    redirect: '/demo/index',
-    children: [{
-      path: 'index',
-      meta: {
-        title: 'index'
-      },
-      name: 'demo-index',
-      component: () => import('@/views/demo/index.vue')
-    }]
-  }
+  // 调试组件使用
+  // {
+  //   path: '/demo',
+  //   meta: {
+  //     title: 'demo',
+  //     icon: 'el-icon-loading',
+  //   },
+  //   name: 'demo',
+  //   component: Layout,
+  //   redirect: '/demo/index',
+  //   children: [{
+  //     path: 'index',
+  //     meta: {
+  //       title: 'index'
+  //     },
+  //     name: 'demo-index',
+  //     component: () => import('@/views/demo/index.vue')
+  //   }]
+  // }
 ]
