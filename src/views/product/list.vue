@@ -62,6 +62,7 @@
         prop="name"
         label="品牌名称"
       /><el-table-column align="center" prop="brandMsg" label="产品名称" />
+      /><el-table-column align="center" prop="description" label="产品描述" />
       <el-table-column
         align="center"
         prop="typeMsg"
