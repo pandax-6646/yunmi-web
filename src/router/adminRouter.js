@@ -30,39 +30,39 @@ export default [
     redirect: '/brand/list',
     meta: {
       title: "品牌管理",
-      icon: "el-icon-s-cooperation"
+      icon: "icon-brand"
     },
 
     children: [{
-        name: 'BrandList',
-        path: 'list',
-        component: () => import("@/views/brand/list.vue"),
-        meta: {
-          title: '品牌列表',
-          icon: 'icon-liebiao'
-        }
-      },
-      {
-        name: 'BrandAdd',
-        path: 'add',
-        component: () => import("@/views/brand/add.vue"),
-        meta: {
-          title: '添加品牌',
-          icon: 'icon-tianjia'
-        }
-      },
-      {
-        name: 'BrandEdit',
-        path: 'edit',
-        component: () => import("@/views/brand/edit.vue"),
-        meta: {
-          title: '编辑品牌',
-          icon: 'icon-bianji',
+      name: 'BrandList',
+      path: 'list',
+      component: () => import("@/views/brand/list.vue"),
+      meta: {
+        title: '品牌列表',
+        icon: 'icon-liebiao'
+      }
+    },
+    {
+      name: 'BrandAdd',
+      path: 'add',
+      component: () => import("@/views/brand/add.vue"),
+      meta: {
+        title: '添加品牌',
+        icon: 'icon-tianjia'
+      }
+    },
+    {
+      name: 'BrandEdit',
+      path: 'edit',
+      component: () => import("@/views/brand/edit.vue"),
+      meta: {
+        title: '编辑品牌',
+        icon: 'icon-bianji',
 
-          // 该路由不在页面显示
-          hidden: true
-        }
-      },
+        // 该路由不在页面显示
+        hidden: true
+      }
+    },
     ]
   },
 
@@ -73,39 +73,39 @@ export default [
     path: '/product',
     meta: {
       title: "产品管理",
-      icon: 'el-icon-shopping-cart-full'
+      icon: 'icon-shangpingouwudai2'
     },
     component: Layout,
     redirect: '/product/list',
 
     children: [{
-        name: 'ProductList',
-        path: 'list',
-        meta: {
-          title: '产品列表',
-          icon: 'icon-liebiao'
-        },
-        component: () => import('@/views/product/list')
+      name: 'ProductList',
+      path: 'list',
+      meta: {
+        title: '产品列表',
+        icon: 'icon-liebiao'
       },
-      {
-        name: 'ProductAdd',
-        path: 'add',
-        meta: {
-          title: '添加产品',
-          icon: 'icon-tianjia'
-        },
-        component: () => import('@/views/product/add')
+      component: () => import('@/views/product/list')
+    },
+    {
+      name: 'ProductAdd',
+      path: 'add',
+      meta: {
+        title: '添加产品',
+        icon: 'icon-tianjia'
       },
-      {
-        name: 'ProductEdit',
-        path: 'edit',
-        meta: {
-          title: '编辑产品',
-          icon: 'icon-bianji',
-          hidden: true
-        },
-        component: () => import('@/views/product/edit')
-      }
+      component: () => import('@/views/product/add')
+    },
+    {
+      name: 'ProductEdit',
+      path: 'edit',
+      meta: {
+        title: '编辑产品',
+        icon: 'icon-bianji',
+        hidden: true
+      },
+      component: () => import('@/views/product/edit')
+    }
     ]
   },
 
